@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+	--color-brand-green: #0c4f4f;
+	--color-brand-orange: #f39a2d;
+	--color-page-bg: #ffffff;
+	--color-soft-bg: #f2f8f5;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: var(--color-page-bg);
+	color: var(--color-brand-green);
+	font-family: "Poppins", sans-serif;
+}
+
+@keyframes aboutFadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(18px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.about-fade-up {
+	animation: aboutFadeUp 0.7s ease-out both;
+}
+
+@keyframes bentoFadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(24px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.bento-fade-up {
+	opacity: 0;
+	animation: bentoFadeUp 0.8s ease-out forwards;
+}
