@@ -9,6 +9,20 @@
 	font-family: "Poppins", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+[id] {
+	scroll-margin-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body {
 	background-color: var(--color-page-bg);
 	color: var(--color-brand-green);
@@ -31,6 +45,55 @@ body {
 	animation: aboutFadeUp 0.7s ease-out both;
 }
 
+@keyframes revealUp {
+	from {
+		opacity: 0;
+		transform: translateY(22px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes revealRight {
+	from {
+		opacity: 0;
+		transform: translateX(26px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes floatSoft {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+.reveal-up {
+	opacity: 0;
+	animation: revealUp 0.8s ease-out forwards;
+}
+
+.reveal-right {
+	opacity: 0;
+	animation: revealRight 0.9s ease-out forwards;
+}
+
+.float-soft {
+	animation: floatSoft 6s ease-in-out infinite;
+}
+
 @keyframes bentoFadeUp {
 	from {
 		opacity: 0;
@@ -46,4 +109,16 @@ body {
 .bento-fade-up {
 	opacity: 0;
 	animation: bentoFadeUp 0.8s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.about-fade-up,
+	.bento-fade-up,
+	.reveal-up,
+	.reveal-right,
+	.float-soft {
+		animation: none !important;
+		opacity: 1;
+		transform: none;
+	}
 }

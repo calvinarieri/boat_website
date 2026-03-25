@@ -63,7 +63,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-[#f39a2d]">Contact</h3>
             <ul className="mt-4 space-y-3 text-sm text-white/85">
               <li>+254 700 123 456</li>
-              <li>hello@boatwave.com</li>
+              <li>hello@boat.com</li>
               <li>Mombasa, Kenya</li>
             </ul>
             <a
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/20 pt-5 text-center text-xs text-white/70">
-          © {year} BoatWave. All rights reserved.
+          © {year} Boat. All rights reserved.
         </div>
       </div>
     </footer>

@@ -18,10 +18,11 @@ export default function OurClients() {
         <h2 className="mt-4 text-center text-3xl font-semibold text-[#0c4f4f] sm:text-4xl">We work with the best partners</h2>
 
         <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {logos.map((logo) => (
+          {logos.map((logo, idx) => (
             <div
               key={logo.id}
-              className="flex h-16 items-center justify-center rounded-xl border border-[#0c4f4f]/15 bg-[#f7fbf9] px-4 transition hover:-translate-y-0.5 hover:border-[#f39a2d] hover:bg-white"
+              className="reveal-up flex h-16 items-center justify-center rounded-xl border border-[#0c4f4f]/15 bg-[#f7fbf9] px-4 transition duration-300 hover:-translate-y-1 hover:border-[#f39a2d] hover:bg-white"
+              style={{ animationDelay: `${80 + idx * 50}ms` }}
             >
               <img src={logo.src} alt={logo.alt} className="h-9 w-full object-contain" loading="lazy" />
             </div>

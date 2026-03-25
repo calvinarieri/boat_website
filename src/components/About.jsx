@@ -2,7 +2,7 @@ export default function About() {
 	return (
 		<div className="mx-auto flex min-h-[75vh] w-full max-w-7xl items-center px-6 py-10 lg:px-8">
 			<div className="about-fade-up grid w-full items-center gap-10 md:grid-cols-[46%_54%]">
-				<div className="flex min-h-[58vh] items-center justify-center">
+				<div className="reveal-right flex min-h-[58vh] items-center justify-center" style={{ animationDelay: '60ms' }}>
 					<img
 						src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
 						alt="Handshake between business partners"
@@ -10,7 +10,7 @@ export default function About() {
 					/>
 				</div>
 
-				<div className="text-left">
+				<div className="reveal-up text-left" style={{ animationDelay: '120ms' }}>
 					<p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#f39a2d]">About Boat</p>
 					<h2 className="text-3xl font-bold text-[#0c4f4f] sm:text-4xl">About Our Company</h2>
 					<p className="mt-4 max-w-2xl text-base leading-8 text-[#0c4f4f]/80 sm:text-lg">

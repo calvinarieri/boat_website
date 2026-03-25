@@ -9,7 +9,7 @@ export default function HeroSection() {
       <NavigationBar />
 
       <div className="mx-auto grid min-h-[75vh] w-full max-w-7xl grid-cols-1 items-center gap-10 px-6 pb-12 pt-28 md:pt-32 lg:grid-cols-2 lg:gap-14 lg:px-8">
-        <div className="relative z-10"> 
+        <div className="relative z-10 reveal-up" style={{ animationDelay: '80ms' }}>
           <h1 className="text-4xl font-bold leading-tight text-[#0c4f4f] sm:text-5xl lg:text-6xl">
             Welcome to Boat
           </h1>
@@ -21,21 +21,21 @@ export default function HeroSection() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#"
-              className="rounded-full bg-[#0c4f4f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#f39a2d]"
+              className="rounded-full bg-[#0c4f4f] px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#f39a2d]"
             >
               Learn More
             </a>
             <a
               href="#"
-              className="rounded-full border border-[#0c4f4f] bg-white px-6 py-3 text-sm font-semibold text-[#0c4f4f] transition hover:border-[#f39a2d] hover:text-[#f39a2d]"
+              className="rounded-full border border-[#0c4f4f] bg-white px-6 py-3 text-sm font-semibold text-[#0c4f4f] transition duration-300 hover:-translate-y-0.5 hover:border-[#f39a2d] hover:text-[#f39a2d]"
             >
               Get Started
             </a>
           </div>
         </div>
 
-        <div className="relative z-10">
-          <div className="flex items-end justify-center p-2">
+        <div className="relative z-10 reveal-right" style={{ animationDelay: '180ms' }}>
+          <div className="float-soft flex items-end justify-center p-2">
             <img
               src="/hero-human.svg"
               alt="Professional representing Boat sales, marketing, and technology services"

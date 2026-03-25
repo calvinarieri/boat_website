@@ -9,7 +9,6 @@ export default function NavigationBar() {
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'Partners', href: '#partners' },
-    { label: 'Careers', href: '#careers' },
     { label: 'Contact', href: '/contact' },
   ]
 
